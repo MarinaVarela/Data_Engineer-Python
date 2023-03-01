@@ -13,7 +13,7 @@ def adicionar_dinheiro(caixinha, valor, operacoes):
         return caixinha
     else:
         print("Não é possível adicionar esse valor. Operação cancelada.")
-        return None
+        return {input("Pressione ENTER para continuar...")}
     
 def retirar_dinheiro(caixinha, valor, operacoes):
     """Retira dinheiro da caixinha, se houver saldo suficiente."""
@@ -23,7 +23,7 @@ def retirar_dinheiro(caixinha, valor, operacoes):
         return caixinha
     else:
         print("Saldo insuficiente. Operação cancelada.")
-        return None
+        return {input("Pressione ENTER para continuar...")}
 
 def verificar_saldo(caixinhas, operacoes):
     """Exibe o saldo das caixinhas e o histórico de operações."""
